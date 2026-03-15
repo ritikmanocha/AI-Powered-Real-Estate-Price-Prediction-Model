@@ -18,6 +18,22 @@ The web interface is built using **Streamlit**, while the machine learning model
 
 ---
 
+## 📸 Application Screenshots
+
+### Home Page
+![Home Page](images/home_page.png)
+
+### Login Page
+![Login Page](images/login_page.png)
+
+### Registration Page
+![Register Page](images/register_page.png)
+
+### Prediction Page
+![Prediction Page](images/prediction_page.png)
+
+---
+
 ## 🛠 Technologies Used
 - Python
 - Streamlit
@@ -38,7 +54,7 @@ streamlit_project
 │   ├── Login.py
 │   ├── Register.py
 │   ├── Payment.py
-│   └── ML_model.py
+│   └── Prediction_page.py
 │
 ├── utils
 │   └── auth.py
@@ -49,9 +65,13 @@ streamlit_project
 ├── model.py
 ├── requirements.txt
 ├── .gitignore
-└── README.md
-```
-
+├── README.md
+│
+├── Login page.png
+├── Main page.png
+├── Payment page.png
+├── Prediction page.png
+└── Registration page.png
 ---
 
 ## ⚙️ Installation & Setup
