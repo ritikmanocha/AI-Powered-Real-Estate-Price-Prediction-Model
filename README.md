@@ -74,6 +74,8 @@ streamlit_project
 └── Registration page.png
 ---
 
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
