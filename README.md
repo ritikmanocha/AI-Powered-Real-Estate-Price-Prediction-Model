@@ -18,21 +18,7 @@ The web interface is built using **Streamlit**, while the machine learning model
 
 ---
 
-## 📸 Application Screenshots
 
-### Home Page
-![Home Page](images/home_page.png)
-
-### Login Page
-![Login Page](images/login_page.png)
-
-### Registration Page
-![Register Page](images/register_page.png)
-
-### Prediction Page
-![Prediction Page](images/prediction_page.png)
-
----
 
 ## 🛠 Technologies Used
 - Python
@@ -72,7 +58,7 @@ streamlit_project
 ├── Payment page.png
 ├── Prediction page.png
 └── Registration page.png
----
+```
 
 ---
 
@@ -120,3 +106,4 @@ B.Tech – Artificial Intelligence & Data Science
 
 ## ⭐ Support
 If you like this project, please consider giving this repository a **star ⭐ on GitHub**.
+
