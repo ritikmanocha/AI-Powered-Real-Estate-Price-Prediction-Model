@@ -1,0 +1,5 @@
+streamlit
+stripe
+mysql-connector-python
+scikit-learn
+pandas
