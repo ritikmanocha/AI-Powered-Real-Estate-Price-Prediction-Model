@@ -2,18 +2,20 @@ import streamlit as st
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-# check payment
-if "paid" not in st.session_state:
-    st.warning("Please complete payment first 💳")
+# ---------- PAYMENT CHECK ----------
+if not st.session_state.get("paid", False):
+    st.warning("⚠️ Please complete payment first to access prediction 💳")
     st.stop()
 
-st.title("House Price Prediction")
+# ---------- UI ----------
+st.title("🏠 House Price Prediction")
 
 area = st.number_input("Area (sqft)")
 bed = st.number_input("Bedrooms")
 bath = st.number_input("Bathrooms")
 age = st.number_input("Age")
 
+# ---------- MODEL ----------
 model = LinearRegression()
 
 X = np.array([
@@ -26,8 +28,9 @@ X = np.array([
 
 y = np.array([200000,300000,400000,500000,600000])
 
-model.fit(X,y)
+model.fit(X, y)
 
+# ---------- PREDICTION ----------
 if st.button("Predict Price"):
-    pred = model.predict([[area,bed,bath,age]])
+    pred = model.predict([[area, bed, bath, age]])
     st.success(f"Estimated Price: ${int(pred[0])}")
