@@ -1,5 +1,6 @@
 streamlit
 stripe
-mysql-connector-python
+python-dotenv
 scikit-learn
-pandas
+numpy
+mysql-connector-python
