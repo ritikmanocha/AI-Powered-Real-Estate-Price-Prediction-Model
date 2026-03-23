@@ -33,7 +33,7 @@ if st.button("Pay Now"):
                 "quantity": 1,
             }],
             mode="payment",
-            success_url="http://localhost:8501/Payment?success=true",
+            success_url="https://ai-powered-real-estate-price-prediction-model-apre.streamlit.app/prediction_page?success=true",
             cancel_url="http://localhost:8501/Payment?cancel=true",
         )
 
