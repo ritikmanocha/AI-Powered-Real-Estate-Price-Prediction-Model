@@ -2,6 +2,12 @@ import streamlit as st
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
+# ---------- HANDLE PAYMENT SUCCESS ----------
+query_params = st.query_params
+
+if "success" in query_params:
+    st.session_state["paid"] = True
+
 # ---------- PAYMENT CHECK ----------
 if not st.session_state.get("paid", False):
     st.warning("⚠️ Please complete payment first to access prediction 💳")
